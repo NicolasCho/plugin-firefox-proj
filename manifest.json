@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Goose",
+    "version": "1.0",
+  
+    "permissions": [
+      "http://*/*",
+      "https://*/*",
+      "tabs",
+      "cookies",
+      "<all_urls>",
+      "storage",
+      "webRequest",
+      "contextualIdentities",
+      "notifications"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["index.js"]
+      }
+    ],
+  
+    "browser_action": {
+      "default_icon": "icon/goose.png",
+      "default_title": "Goose",
+      "default_popup": "index.html"
+    }
+  }
