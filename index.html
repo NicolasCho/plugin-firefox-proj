@@ -7,7 +7,21 @@
   </head>
 
   <body>
+    <div class="header">
+      <h1>Goose</h1>
+      <img src="icon/goose.png" alt="logo" width="50" height="50">
+      <p>A plugin to protect your privacy. Honk!</p>
+    </div>
+
     <div class="popup">
+
+      <details>
+        <summary id="browser_hijacking">Browser Hijacking</summary>
+        <div id="click_vuln"></div>
+      </details>
+
+      <hr>
+
       <details>
         <summary id="domain_connections">Domain connections</summary>
         <div id="num_connections"></div>
@@ -33,7 +47,9 @@
         <ul id="tp_cookier"></ul>
         
       </details>
+
     </div>
+    <script src="hijacking.js"></script>
     <script src="cookies.js"></script>
     <script src="web_storage.js"></script>
     <script src="domain_connections.js"></script>
